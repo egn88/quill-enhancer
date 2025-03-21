@@ -1,0 +1,33 @@
+{
+  "name": "quill-enhancer",
+  "version": "1.0.0",
+  "description": "A flexible, typed wrapper around Quill for easily extending with modules and context styling.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "dev": "tsup src/index.ts --watch",
+    "build": "tsup src/index.ts"
+  },
+  "peerDependencies": {
+    "quill": "^2.0.3"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.3.3"
+  },
+  "keywords": [
+    "quill",
+    "editor",
+    "wrapper",
+    "modules",
+    "extensions"
+  ],
+  "author": "Eloy",
+  "license": "MIT"
+}

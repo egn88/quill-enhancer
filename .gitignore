@@ -1,0 +1,33 @@
+# Node dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+dist/
+*.tsbuildinfo
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Coverage (if testing later)
+coverage/
+
+# Local dev links or testing
+*.local.js
+*.local.ts
+
+# Generated lockfiles (keep one if you're using one)
+package-lock.json
+.pnpm-lock.yaml
+yarn.lock
+
+# TypeScript cache
+.cache/
+
