@@ -4,6 +4,7 @@
   "description": "A flexible, typed wrapper around Quill for easily extending with modules and context styling.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
+  "type": "module",
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -11,15 +12,16 @@
     }
   },
   "scripts": {
-    "dev": "tsup src/index.ts --watch",
-    "build": "tsup src/index.ts"
+    "dev": "vite"
   },
   "peerDependencies": {
     "quill": "^2.0.3"
   },
   "devDependencies": {
+    "@types/node": "^22.13.11",
     "tsup": "^8.4.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "vite": "^6.2.2"
   },
   "keywords": [
     "quill",

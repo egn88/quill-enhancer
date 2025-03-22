@@ -55,6 +55,7 @@ export function findAncestor(el: HTMLElement, tag: string): HTMLElement | null {
   
   export function createStyledCell(): HTMLTableCellElement {
     const td = document.createElement('td');
+    td.setAttribute('contenteditable', 'true');
     td.innerHTML = '';
     td.style.minWidth = '80px';
     td.style.minHeight = '20px';
